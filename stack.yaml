@@ -1,0 +1,21 @@
+resolver: nightly-2020-08-27
+packages:
+- .
+extra-deps:
+- Diff-0.3.4
+- liquid-fixpoint-0.8.10.2
+- liquidhaskell-0.8.10.2
+- liquid-ghc-prim-0.6.1
+- liquid-base-4.14.1.0
+- liquid-containers-0.6.2.1
+
+# Use this if you prefer HEAD versions
+# - git: https://github.com/ucsd-progsys/liquidhaskell.git
+#   commit: 0808cc61ce7a28fcab47213b03cf6449017a17b2
+#   subdirs:
+#   - .
+#   - liquid-ghc-prim
+#   - liquid-base
+#   - liquid-containers
+# - git: https://github.com/ucsd-progsys/liquid-fixpoint.git
+#   commit: 01059b748a58d0e182e3103d665dcccf88324545

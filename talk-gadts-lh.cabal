@@ -1,0 +1,34 @@
+cabal-version:       >=1.10
+name:                talk-gadts-lh
+version:             0.1.0.0
+-- synopsis:
+-- description:
+-- bug-reports:
+license:             BSD3
+license-file:        LICENSE
+author:              Alejandro Serrano
+maintainer:          alejandro.serrano@47deg.com
+-- copyright:
+-- category:
+build-type:          Simple
+
+library liquid
+  exposed-modules:     Example
+  build-depends:       liquidhaskell, liquid-base, liquid-containers
+  hs-source-dirs:      src/liquid
+  default-language:    Haskell2010
+  ghc-options:         -fplugin=LiquidHaskell -Wall -Wno-incomplete-patterns
+
+library liquid-currency
+  exposed-modules:     Currency
+  build-depends:       liquidhaskell, liquid-base, liquid-containers
+  hs-source-dirs:      src/currency
+  default-language:    Haskell2010
+  ghc-options:         -fplugin=LiquidHaskell -Wall -Wno-incomplete-patterns
+
+library gadt
+  exposed-modules:     Example
+  build-depends:       base, ghc-typelits-natnormalise
+  hs-source-dirs:      src/gadt
+  default-language:    Haskell2010
+  ghc-options:         -fplugin=GHC.TypeLits.Normalise -Wall

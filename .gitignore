@@ -1,0 +1,4 @@
+dist*
+.liquid
+.stack-work
+stack.yaml.lock

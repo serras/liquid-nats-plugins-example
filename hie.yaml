@@ -1,0 +1,8 @@
+cradle:
+  cabal:
+    - path: "./src/gadt/"
+      component: "talk-gadts-lh:gadt"
+    - path: "./src/liquid/"
+      component: "talk-gadts-lh:liquid"
+    - path: "./src/currency/"
+      component: "talk-gadts-lh:liquid-currency"
